@@ -71,6 +71,13 @@ public:
     virtual int read_id(uint8_t *id) = 0;
 
     /**
+     * @brief  Enable the component
+     * @retval 0 in case of success, an error code otherwise
+     */
+    virtual int enable(void) = 0;
+
+
+    /**
      * @brief Destructor.
      */
     virtual ~Component() {};
